@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0px;
+}
+body{
+    font-family: "Figtree", sans-serif;;
+    background-color: hsl(47, 88%, 63%);
+}
+.parent{
+    background-color: white;
+    border: 1px black solid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50% );
+    -webkit-transform: translate( -50%, -50% );
+    -moz-transform: translate( -50%, -50% );
+    -ms-transform: translate( -50%, -50% );
+    -o-transform: translate( -50%, -50% );
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    width: 400px;
+    height: 550px;
+    box-shadow: 10px 10px ;
+}
+.parent *{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.parent .l{
+    background-color: hsl(47, 88%, 63%);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    display: block;
+    font-weight: 800;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 8px;
+}
+.parent .img1{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 25px;
+    width: 350px;
+    height: fit-content;
+}
+.parent .date{
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    color: gray;
+}
+.parent h2{
+    font-weight: 900;
+    cursor: pointer;
+}
+.parent h2:hover{
+    color: hsl(47, 88%, 63%);
+}
+.parent p{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+}
+.parent .name{
+    width: fit-content;
+    display: flex;
+    height: fit-content;
+}
+.parent .name .img2{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.parent .name p{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    margin-left: 5px;
+    font-weight: 800;
+}
+.attribution{ 
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.attribution p:first-of-type{
+    margin-left: 8px;
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+.attribution p:last-of-type{
+    margin-right: 8px;
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+@media (max-width: 500px){
+    .parent{
+        width: 300px;
+    }
+    .parent .img1{
+        width: 250px;
+    }
+    .attribution {
+        white-space: nowrap;
+    }
+    .attribution p{
+        font-size: 10px;
+    }
+}
